@@ -1,0 +1,23 @@
+$border-radius: 3px;
+$light-color: white;
+
+.authButton {
+  padding: 10px 15px;
+
+  border: 1px solid $light-color;
+  border-radius: $border-radius;
+
+  color: $light-color;
+
+  // display: inline;
+  // vertical-align: middle;
+  
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
