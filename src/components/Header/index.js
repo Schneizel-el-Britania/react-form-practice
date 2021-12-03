@@ -11,7 +11,7 @@ export default function Header() {
   );
   const headerWrapperClasses = classNames(
     styles.headerWrapper,
-    'col-12 col-md-8',
+    'col-12 col-sm-10 col-md-8 col-lg-10',
   );
 
   return (
@@ -22,7 +22,6 @@ export default function Header() {
           <AuthorizationButton />
         </div>
       </div>
-
     </header>
   )
 }

@@ -2,11 +2,12 @@ import React from 'react';
 import styles from './AuthorizationButton.module.scss'
 
 export default function AuthorizationButton() {
-  const pathname = window.location.pathname.substring(1);
-  const relocateValue = pathname === "signin" ? "signup" : "signin";
+  const onSignIn = window.location.pathname === "/signin";
+  const relocatePath = onSignIn ? "signup" : "signin";
+  const authText = onSignIn ? "Sign up" : "Sign in"
 
   return (
-    <a className={styles.authButton} href={relocateValue}>{relocateValue}</a>
+    <a className={styles.authButton} href={relocatePath}>{authText}</a>
   )
 }
 

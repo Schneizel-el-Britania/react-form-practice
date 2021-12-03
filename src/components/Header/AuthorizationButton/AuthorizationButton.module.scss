@@ -1,23 +1,16 @@
-$border-radius: 3px;
-$light-color: white;
+@import "/src/common/styles/variables";
+@import "/src/common/styles/colors";
 
 .authButton {
-  padding: 10px 15px;
-
-  border: 1px solid $light-color;
-  border-radius: $border-radius;
-
-  color: $light-color;
-
-  // display: inline;
-  // vertical-align: middle;
-  
+  height: fit-content;
+  padding: 1rem 1.2rem;
   display: flex;
   align-items: center;
 
-  font-weight: 700;
+  border: 1px solid $light-color;
+  border-radius: $border-radius;
+  color: $light-color;
 
-  &::first-letter {
-    text-transform: uppercase;
-  }
+  font-weight: $bold-weight;
+  font-size: 1.2rem;
 }
