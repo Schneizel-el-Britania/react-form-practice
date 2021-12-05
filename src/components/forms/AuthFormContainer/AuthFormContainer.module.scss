@@ -1,8 +1,8 @@
 @import "/src/common/styles/templates";
 @import "/src/common/styles/colors";
 
-.form {
-  margin: auto;
+.formContainer{
+  @extend %alignItems;
 }
 
 .header {
