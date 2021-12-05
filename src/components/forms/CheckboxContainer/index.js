@@ -3,10 +3,10 @@ import React from 'react';
 import styles from './CheckboxContainer.module.scss'
 
 export default function CheckboxContainer(props) {
-  const { desc, ...rest } = props;
+  const { desc, name, ...rest } = props;
   return (
     <label className={styles.checkbox}>
-      <Field type="checkbox" {...rest} />
+      <Field type="checkbox" name={name} {...rest} />
       {desc}
     </label>
   )

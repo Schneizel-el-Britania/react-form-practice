@@ -1,8 +1,9 @@
 @import "/src/common/styles/templates";
 @import "/src/common/styles/colors";
+@import "/src/common/styles/variables";
 
 .label {
-  margin-bottom: 1.3rem;
+  margin-bottom: $input-space;
   display: block;
   position: relative;
 }
@@ -27,7 +28,7 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  
+
   &::first-letter {
     text-transform: uppercase;
   }

@@ -1,19 +1,25 @@
 @import "/src/common/styles/templates";
 @import "/src/common/styles/colors";
 
-.formContainer{
+.formContainer {
   @extend %alignItems;
 }
 
 .header {
   margin: 2rem 0;
-
   color: $light-color;
-
   text-transform: uppercase;
   text-align: center;
   font-weight: $bold-weight;
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+.subHeader {
+  margin: auto;
+  margin-bottom: 2rem;
+  color: $light-color;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 .submit {
@@ -23,7 +29,6 @@
   background-color: $submit-color;
 
   font-family: inherit;
-  text-transform: uppercase;
-  font-weight: $bold-weight;
+  text-transform: capitalize;
   font-size: 1.2rem;
 }

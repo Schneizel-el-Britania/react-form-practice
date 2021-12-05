@@ -1,0 +1,13 @@
+@import "/src/common/styles/variables";
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  
+  @media screen and (min-width: 550px) {
+    flex-direction: row;
+    * + * {
+      margin-left: $input-space * 2;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "/src/common/styles/colors";
+@import "/src/common/styles/variables";
+
+.radioContainer {
+  padding: $input-space;
+  padding-right: 0;
+  margin-bottom: $input-space;
+  border: 1px solid $light-color;
+  color: $light-color;
+}
+
+.radioInnerContainer {
+  display: flex;
+  :first-child {
+    margin-bottom: 1rem;
+  }
+}
+
+.radio {
+  margin-right: 1rem;
+}
+
+.mainText {
+  font-size: 1.4rem;
+}
+
+.subText {
+  font-size: 0.9rem;
+}

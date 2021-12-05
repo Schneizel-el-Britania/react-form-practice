@@ -17,8 +17,10 @@ export default function SignInForm() {
     formikBab.resetForm();
   }
   return (
-    <AuthFormContainer initialValues={initialValues} onSubmit={onSubmit} validationSchema={SIGN_IN_SCHEMA}
-      header="login to your account" submitText="login">
+    <AuthFormContainer
+      initForm={{ initialValues, onSubmit, validationSchema: SIGN_IN_SCHEMA }}
+      header={{ mainHeader: "login to your account" }}
+      submitText="login">
       {<>
         <InputContainer name="email" placeholder="Email address" />
         <InputContainer name="password" placeholder="Password" type="password" />
