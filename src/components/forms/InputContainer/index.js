@@ -7,7 +7,7 @@ export default function InputContainer(props) {
   return (
     <label className={styles.label}>
       <Field name={name} {...rest} className={styles.input} />
-      <ErrorMessage name={name} component='div' className />
+      <ErrorMessage name={name} component='div' className={styles.error} />
     </label>
   )
 }

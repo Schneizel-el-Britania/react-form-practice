@@ -2,7 +2,9 @@
 @import "/src/common/styles/colors";
 
 .label {
+  margin-bottom: 1.3rem;
   display: block;
+  position: relative;
 }
 
 .input {
@@ -14,5 +16,19 @@
   &::placeholder {
     color: inherit;
     font-family: inherit;
+  }
+}
+
+.error {
+  padding-right: 2rem;
+  color: $error-color;
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  
+  &::first-letter {
+    text-transform: uppercase;
   }
 }
