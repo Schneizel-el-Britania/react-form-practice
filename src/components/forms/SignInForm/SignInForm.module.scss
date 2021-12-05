@@ -1,0 +1,11 @@
+@import "/src/common/styles/colors";
+
+.rememberPwdContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restorePwd {
+  color: $light-color;
+  text-transform: capitalize;
+}

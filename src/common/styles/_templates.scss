@@ -1,0 +1,9 @@
+@import "./variables";
+
+%input {
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 1.3rem;
+  border: none;
+  border-radius: $border-radius;
+}

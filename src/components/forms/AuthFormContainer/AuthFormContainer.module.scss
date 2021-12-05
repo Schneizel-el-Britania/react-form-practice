@@ -1,0 +1,29 @@
+@import "/src/common/styles/templates";
+@import "/src/common/styles/colors";
+
+.form {
+  margin: auto;
+}
+
+.header {
+  margin: 2rem;
+
+  color: $light-color;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: $bold-weight;
+  font-size: 2.5rem;
+}
+
+.submit {
+  @extend %input;
+
+  color: $light-color;
+  background-color: $submit-color;
+
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: $bold-weight;
+  font-size: 1.2rem;
+}

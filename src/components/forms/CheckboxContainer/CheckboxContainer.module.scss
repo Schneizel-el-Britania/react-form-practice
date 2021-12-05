@@ -1,0 +1,12 @@
+@import "/src/common/styles/colors";
+
+.checkbox {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: $light-color;
+  text-transform: capitalize;
+  
+  > input {
+    margin-right: 0.5rem;
+  }
+}

@@ -1,0 +1,18 @@
+@import "/src/common/styles/templates";
+@import "/src/common/styles/colors";
+
+.label {
+  display: block;
+}
+
+.input {
+  color: $placeholder-text-color;
+  font-family: inherit;
+  font-size: 1.2rem;
+  @extend %input;
+
+  &::placeholder {
+    color: inherit;
+    font-family: inherit;
+  }
+}
