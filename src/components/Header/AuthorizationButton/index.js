@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './AuthorizationButton.module.scss'
 
 export default function AuthorizationButton() {
-  const onSignIn = window.location.pathname === "/signin";
-  const relocatePath = onSignIn ? "signup" : "signin";
-  const authText = onSignIn ? "Sign up" : "Sign in"
-
+  const path = useLocation().pathname;
   return (
-    <a className={styles.authButton} href={relocatePath}>{authText}</a>
+    <Link
+      to={path === "/signin" ? "signup" : "signin"}
+      className={styles.authButton}>
+      {path === "/signin" ? "Sign up" : "Sign in"}
+    </Link>
   )
 }
-
