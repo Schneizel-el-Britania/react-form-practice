@@ -1,0 +1,5 @@
+@import '/src/common/styles/templates';
+
+.mainHeader{
+ @include header(3rem);
+}
