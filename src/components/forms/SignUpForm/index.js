@@ -5,6 +5,8 @@ import InputContainer from '../InputContainer';
 import RadioContainer from '../RadioContainer';
 import CheckboxContainer from '../CheckboxContainer';
 import styles from './SignUpForm.module.scss'
+import Heading from '../../Heading';
+import classNames from 'classnames';
 // import classNames from 'classnames';
 
 const initialValues = {
@@ -13,6 +15,11 @@ const initialValues = {
 }
 
 export default function SignInForm() {
+  const subHeaderClasses = classNames(
+    styles.subHeader,
+    'col-10'
+  )
+
   const onSubmit = (values, formikBab) => {
     console.log('values:', values)
     formikBab.resetForm();
@@ -20,7 +27,10 @@ export default function SignInForm() {
   return (
     <AuthFormContainer
       initForm={{ initialValues: initialValues, onSubmit, validationSchema: SIGN_UP_SCHEMA }}
-      header={{ mainHeader: "create an account", subHeader: "We always keep your name and email address private." }}
+      header={<Heading
+        h2={{ className: styles.header, text: "create an account" }}
+        h3={{ className: subHeaderClasses, text: "We always keep your name and email address private." }}
+      />}
       submitText="create account">
       {<>
         <div className={styles.inputWrapper}>

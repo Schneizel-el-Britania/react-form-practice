@@ -1,4 +1,6 @@
 @import "/src/common/styles/colors";
+@import "/src/common/styles/variables";
+@import "/src/common/styles/templates";
 
 .rememberPwdContainer {
   display: flex;
@@ -8,4 +10,8 @@
 .restorePwd {
   color: $light-color;
   text-transform: capitalize;
+}
+
+.header {
+  @include header(2.5rem);
 }

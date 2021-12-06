@@ -1,5 +1,6 @@
 import React from 'react';
 import { SIGN_IN_SCHEMA } from '../../../utils/schemaValidation';
+import Heading from '../../Heading';
 import AuthFormContainer from '../AuthFormContainer';
 import CheckboxContainer from '../CheckboxContainer';
 import InputContainer from '../InputContainer';
@@ -16,10 +17,13 @@ export default function SignInForm() {
     console.log('values:', values)
     formikBab.resetForm();
   }
+
   return (
     <AuthFormContainer
       initForm={{ initialValues, onSubmit, validationSchema: SIGN_IN_SCHEMA }}
-      header={{ mainHeader: "login to your account" }}
+      header={<Heading
+        h2={{ className: styles.header, text: "login to your account" }}
+      />}
       submitText="login">
       {<>
         <InputContainer name="email" placeholder="Email address" />

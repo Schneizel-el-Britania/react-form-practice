@@ -5,23 +5,6 @@
   @extend %alignItems;
 }
 
-.header {
-  margin: 2rem 0;
-  color: $light-color;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: $bold-weight;
-  font-size: 3rem;
-}
-
-.subHeader {
-  margin: auto;
-  margin-bottom: 2rem;
-  color: $light-color;
-  text-align: center;
-  font-size: 1.4rem;
-}
-
 .submit {
   @extend %input;
 

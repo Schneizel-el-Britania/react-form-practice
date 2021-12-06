@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./colors";
 
 %input {
   width: 100%;
@@ -7,6 +8,23 @@
   border-radius: $border-radius;
 }
 
-%alignItems{
+%alignItems {
   margin: auto;
+}
+
+@mixin header($font-size) {
+  margin: 2rem 0;
+  color: $light-color;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: $bold-weight;
+  font-size: $font-size;
+}
+
+%subHeader {
+  margin: auto;
+  margin-bottom: 2rem;
+  color: $light-color;
+  text-align: center;
+  font-size: 1.4rem;
 }
