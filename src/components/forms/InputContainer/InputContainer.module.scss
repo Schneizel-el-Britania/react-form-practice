@@ -9,20 +9,24 @@
 }
 
 .input {
-  color: $placeholder-text-color;
+  color: $main-text-color;
   font-family: inherit;
   font-size: 1.2rem;
   @extend %input;
 
   &::placeholder {
-    color: inherit;
+    color: $placeholder-text-color;
     font-family: inherit;
   }
 }
 
 .error {
-  padding-right: 2rem;
+  width: 40%;
+  padding-right: 1rem;
+
   color: $error-color;
+  font-size: 0.8rem;
+  text-align: right;
 
   position: absolute;
   top: 50%;
