@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 export default function Heading(props) {
-  const { h2, h3 } = props;
+  const createHeader = (name) => React.createElement(
+    name,
+    { className: props[name].className },
+    props[name].text
+  );
+
   return (
     <div>
-      {h2 && <h2 className={h2.className}>{h2.text}</h2>}
-      {h3 && <h3 className={h3.className}>{h3.text}</h3>}
+      {Object.keys(props).map(createHeader)}
     </div>
   )
 }
