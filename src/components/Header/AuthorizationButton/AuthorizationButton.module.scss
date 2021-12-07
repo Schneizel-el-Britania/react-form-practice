@@ -1,7 +1,9 @@
 @import "/src/common/styles/variables";
 @import "/src/common/styles/colors";
+@import "/src/common/styles/templates";
 
 .authButton {
+  max-width: 100px;
   height: fit-content;
   padding: 1rem 1.2rem;
   display: flex;
@@ -13,4 +15,5 @@
 
   font-weight: $bold-weight;
   font-size: 1.2rem;
+  @extend %buttonLimit;
 }

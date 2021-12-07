@@ -6,12 +6,13 @@
 }
 
 .submit {
-  @extend %input;
-
   color: $light-color;
   background-color: $submit-color;
 
   font-family: inherit;
   text-transform: capitalize;
   font-size: 1.2rem;
+
+  @extend %input;
+  @extend %buttonLimit;
 }

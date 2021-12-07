@@ -12,6 +12,18 @@
   margin: auto;
 }
 
+@mixin textLimit($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+%buttonLimit {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @mixin header($font-size) {
   margin: 2rem 0;
   color: $light-color;
@@ -19,6 +31,7 @@
   text-align: center;
   font-weight: $bold-weight;
   font-size: $font-size;
+  @include textLimit(2);
 }
 
 %subHeader {
@@ -27,4 +40,5 @@
   color: $light-color;
   text-align: center;
   font-size: 1.4rem;
+  @include textLimit(3);
 }
