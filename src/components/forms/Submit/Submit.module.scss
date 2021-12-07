@@ -1,0 +1,14 @@
+@import "/src/common/styles/variables";
+@import "/src/common/styles/templates";
+
+.submit {
+  color: $light-color;
+  background-color: $submit-color;
+
+  font-family: inherit;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+
+  @extend %input;
+  @extend %buttonLimit;
+}
